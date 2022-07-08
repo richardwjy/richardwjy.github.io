@@ -1,7 +1,8 @@
 body,html{
     margin:0;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    scroll-behavior: smooth;
 }
 
 body{
@@ -13,16 +14,12 @@ div{
     display: block;
 }
 
-.container{
-    background-color: white;
-}
-
 .navbar{
     top:0;
-    position: fixed;
+    position: sticky;
     background-color: #fff;
     width: 100%;
-    display: inline;
+    display: block;
     box-shadow: 0 0 30px black;
     overflow: hidden;
     padding: 0;
@@ -69,4 +66,18 @@ div{
     background-color: #487eb0;
     color: white;
     transition: 0.3s;
+}
+
+.profile-section{
+    margin: 5% 15% 0 15%;
+    height: 100px;
+}
+
+#aboutme{
+    min-height: 100%;
+}
+
+#project{
+    scroll-margin-block-start: 110px;
+    scroll-margin-block-end: 110px;
 }
